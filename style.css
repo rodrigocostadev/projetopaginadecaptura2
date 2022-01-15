@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: arial , helvetica , sans-serif;
+    background-color: black;
+    
+}
+
+header{
+    background-color: aqua;
+    text-align: CENTER;
+    color: WHITE;
+    /* margin: 0; */
+    padding: 10px;    
+}
+
+.title{
+    font-size: 26px;
+}
+
+.container{
+    margin: auto;
+    max-width: 1000px;
+}
+
+.mb{
+    margin-bottom: 15px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+section{
+    background-image: url(./images/people.jpg);
+    background-size: cover;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.formcontainer{
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    max-width: 230px;
+    background-color: #FFFFFFBB;
+    color: black;
+    float: right;
+}
+
+input, select{
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box; /* ALINHOU OS CAMPOS DE NOME EMAIL E SELEÇAO DE ESTADO , ESTAVAM DESALINHADOS */
+    border: none;
+    margin-bottom: 10px;
+}
+
+input[type="submit"]{
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+}
+
+select{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+
+    background-image: url(./images/arrow.jpg);
+    background-repeat: no-repeat;
+
+    background-position-x: calc(100% - 10px); /* 100% a direita menos 10 pixels*/
+    background-position-y: center;
+
+    /* background-position-x: calc(100% - 10px)center;     DESSA FORMA FICA SIMPLIFICADA, PRIMEIRO O X E DEPOIS O Y */
+
+}
+
+footer{
+    background-color: #202121;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.picture{
+    width: 160px;
+    margin-right: 40px;
+    
+}
+
+.description{
+    display: inline-block;
+    color: white;
+    max-width: 40%;
+    text-align: left;
+    /* transform: translateY( -40%); */
+}
+
+.description p, .description h3{
+    margin-bottom: 20px;
+    }
+
+.description h3{
+    font-size: 24px; 
+}
+
+
+
+@media screen and (max-width: 1000px) { 
+
+    .section{
+        position: relative;
+    }
+
+    .formcontainer{
+        position: relative;
+        right: calc( 50% - 115px);
+        
+        
+     }
+
+     .description{
+        display: inline-block;
+        color: white;
+        max-width: 40%;
+        text-align: left;
+        transform: none;
+        
+    }
+    
+     
+}
+
